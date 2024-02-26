@@ -1,66 +1,94 @@
+/* Resetting default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
 }
-header h1 {
-    margin-left: 20px; 
-}
-header nav ul {
-    display: inline;
-}
-header nav ul li {
-    display: inline;
-    margin-right: 20px; 
-}
-header nav ul li:last-child {
-    margin-right: 0; 
-}
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-header nav ul li a:hover {
-    text-decoration: underline;
-}
+
 .container {
     width: 80%;
     margin: auto;
-    padding: 2rem 0;
 }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Align navigation to the right */
+}
+
+.header-right ul li {
+    display: inline;
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+.header-right ul li:first-child {
+    margin-left: 0; /* Remove margin from first menu item */
+}
+
+.header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About section styles */
 #about img {
     max-width: 100%;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+/* Skills section styles */
 #skills ul {
     list-style-type: none;
 }
+
 #skills li {
     margin-bottom: .5rem;
 }
+
+/* Projects section styles */
 .project {
     margin-bottom: 2rem;
 }
+
 .project img {
     max-width: 100%;
 }
+
+/* Contact section styles */
 #contact p {
     margin-bottom: .5rem;
 }
+
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
